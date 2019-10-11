@@ -1,0 +1,31 @@
+
+    <div class="card my-5">
+        <div class="card-body">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">USER ID</th>
+             
+                <th scope="col">MENTOR ID</th>
+               
+                <th scope="col">SKILL NAME</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of proposedata">
+                <td>{{ p.id }}</td>
+                <td>{{ p.userId }}</td>
+             
+                
+                <td>{{ p.mentorId }}</td>
+                
+                <td>{{ p.skillName }}</td>
+<td><button (click)="accept(p.userId,p.mentorId,p.skillName)">ACCEPT</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    

@@ -1,0 +1,71 @@
+
+            <!-- <table class="table table-striped table-bordered table-list"> --
+             <thead>
+              <tr>
+                <th></th>
+                 <th>User Id</th>
+                <th>User Name</th>
+                 <th>Technology</th>
+                 <th>Status</th>
+                 <th>Progress</th>
+               </tr> 
+              </thead>
+              <tbody>
+              
+                  
+                  <tr *ngFor="let tr of training">
+                     <td></td>
+                    <td>{{ tr.userId }}</td>
+                    <td>{{ tr.userName }}</td>
+                    <td>{{ tr.skillName }}</td>
+                    <td>{{ tr.status }}</td>
+                    <td>{{ tr.progress }}</td>
+                    
+                  
+                  </tr>
+                   
+              
+               
+               </tbody>
+             </table>
+            
+         -->
+            <div class="outer">
+                <div class="container">
+                    <div class="row">
+                       
+                             
+            
+                             <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" #log="ngForm"> --
+                                <div class="form-group">
+                                    <label align="center">Edit Skills</label>
+                                    <fieldset>
+                                        <label>ID</label>
+                                        <input type="text" name="id" formControlName="id" class="form-control" disabled >
+                                        
+                                        
+                                        
+            <label>Skills</label>
+                                    <textarea rows="4" cols="50" name="skillName" formControlName="skillName" class="form-control"  ></textarea>
+                                    </fieldset>
+                                </div>
+                                
+                      
+                                
+                              
+                                      
+                            
+            
+            
+            
+            
+                                <div class="form-group">
+                                    <button class="btn btn-primary">Save Changes</button>
+                                </div>
+                             </form> 
+                       
+                    </div>
+                </div>
+            </div>
+            
+  
